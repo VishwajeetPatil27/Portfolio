@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Vishwajeet Patil - Java Developer | CSE Student portfolio." />
+  <title>Vishwajeet Patil | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Space Grotesk', 'sans-serif'],
+          },
+          boxShadow: {
+            glow: '0 0 40px rgba(56, 189, 248, 0.22)',
+            glowPurple: '0 0 50px rgba(168, 85, 247, 0.22)',
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-[#050816] text-slate-100 antialiased overflow-x-hidden">
+  <div class="site-shell relative min-h-screen">
+    <div class="ambient ambient-a"></div>
+    <div class="ambient ambient-b"></div>
+    <div class="ambient ambient-c"></div>
+    <div class="noise-overlay"></div>
+
+    <header id="site-header" class="sticky top-0 z-50 transition-all duration-300">
+      <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8 glass-nav">
+        <a href="#hero" class="group flex items-center gap-3">
+          <span class="flex h-11 w-11 items-center justify-center rounded-2xl border border-cyan-400/20 bg-white/5 text-lg font-bold text-cyan-300 shadow-glow transition group-hover:scale-105">
+            VP
+          </span>
+          <div>
+            <p class="font-display text-lg font-bold tracking-wide text-white">Vishwajeet Patil</p>
+            <p class="text-xs uppercase tracking-[0.35em] text-slate-400">Portfolio</p>
+          </div>
+        </a>
+
+        <div class="hidden items-center gap-2 lg:flex">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#education" class="nav-link">Education</a>
+          <a href="#certificates" class="nav-link">Certificates</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <a href="#contact" class="hidden rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-2 text-sm font-semibold text-cyan-100 transition hover:-translate-y-0.5 hover:border-cyan-300/60 hover:bg-cyan-400/20 hover:shadow-glow sm:inline-flex">
+            Hire Me
+          </a>
+          <button id="menu-toggle" class="inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-white/10 bg-white/5 text-white transition hover:bg-white/10 lg:hidden" aria-label="Toggle menu">
+            <span class="menu-icon"></span>
+          </button>
+        </div>
+      </nav>
+
+      <div id="mobile-menu" class="mx-auto hidden max-w-7xl px-4 pb-4 sm:px-6 lg:hidden">
+        <div class="glass-panel rounded-3xl border border-white/10 p-4">
+          <div class="grid gap-2 text-sm font-medium text-slate-200">
+              <a href="#about" class="mobile-link">About</a>
+              <a href="#skills" class="mobile-link">Skills</a>
+              <a href="#projects" class="mobile-link">Projects</a>
+              <a href="#education" class="mobile-link">Education</a>
+              <a href="#certificates" class="mobile-link">Certificates</a>
+              <a href="#activities" class="mobile-link">Activities</a>
+              <a href="#contact" class="mobile-link">Contact</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="relative overflow-hidden pt-8 sm:pt-12">
+        <div class="mx-auto grid max-w-7xl items-center gap-12 px-4 pb-24 pt-10 sm:px-6 lg:grid-cols-12 lg:px-8 lg:pb-32 lg:pt-16">
+          <div class="reveal lg:col-span-7">
+            <div class="inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/10 px-4 py-2 text-sm text-cyan-100 backdrop-blur-xl">
+              <span class="h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_16px_#34d399]"></span>
+              Available for internships and developer roles
+            </div>
+
+            <h1 class="mt-6 font-display text-5xl font-bold leading-tight text-white sm:text-6xl lg:text-7xl">
+              Vishwajeet Patil
+            </h1>
+
+            <p class="mt-4 max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl">
+              <span class="text-slate-400">Java Full-Stack Developer | CSE Student</span>
+              <span class="mx-2 text-slate-600">•</span>
+              <span class="bg-gradient-to-r from-cyan-300 via-sky-400 to-violet-400 bg-clip-text font-semibold text-transparent">
+                <span id="typing-text"></span><span class="typing-caret">|</span>
+              </span>
+            </p>
+
+            <p class="mt-6 max-w-2xl text-base leading-8 text-slate-400 sm:text-lg">
+              I build clean, reliable, and modern Java full-stack and web applications with a focus on user experience, scalability, and sharp problem solving. I enjoy turning ideas into practical products using Core Java, Spring Boot, MySQL, HTML, CSS, and JavaScript.
+            </p>
+
+            <div class="mt-8 flex flex-wrap gap-4">
+              <a href="#projects" class="btn-primary">View Projects</a>
+              <a href="#contact" class="btn-secondary">Contact Me</a>
+            </div>
+
+            <div class="mt-10 flex flex-wrap gap-3 text-sm text-slate-300">
+              <span class="chip">Core Java</span>
+              <span class="chip">Spring Boot</span>
+              <span class="chip">MySQL</span>
+              <span class="chip">Web Technologies</span>
+            </div>
+          </div>
+
+          <div class="reveal relative lg:col-span-5">
+            <div class="hero-card relative mx-auto max-w-xl rounded-[2rem] border border-white/10 bg-white/5 p-4 shadow-2xl backdrop-blur-2xl">
+              <div class="hero-glow"></div>
+              <div class="relative overflow-hidden rounded-[1.65rem] border border-white/10 bg-slate-950/70">
+                <div class="absolute inset-0 bg-gradient-to-br from-cyan-400/10 via-transparent to-violet-500/10"></div>
+                <div class="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-white/10 to-transparent"></div>
+                <div class="grid gap-6 p-6 sm:p-8">
+                  <div class="flex items-center justify-between">
+                    <div class="rounded-2xl border border-white/10 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.35em] text-slate-300">
+                      Developer Profile
+                    </div>
+                    <div class="flex gap-2">
+                      <span class="h-3 w-3 rounded-full bg-red-400/90"></span>
+                      <span class="h-3 w-3 rounded-full bg-amber-400/90"></span>
+                      <span class="h-3 w-3 rounded-full bg-emerald-400/90"></span>
+                    </div>
+                  </div>
+
+                  <div class="mx-auto">
+                    <div class="profile-ring">
+                      <img src="images/vp.jpeg" alt="Vishwajeet Patil profile photo" class="profile-image" loading="lazy" />
+                    </div>
+                  </div>
+
+                  <div class="grid gap-3 sm:grid-cols-2">
+                    <div class="glass-mini">
+                      <p class="text-xs uppercase tracking-[0.32em] text-slate-400">Focus</p>
+                      <p class="mt-2 text-lg font-semibold text-white">Java Full-Stack, Web Technologies</p>
+                    </div>
+                    <div class="glass-mini">
+                      <p class="text-xs uppercase tracking-[0.32em] text-slate-400">Currently</p>
+                      <p class="mt-2 text-lg font-semibold text-white">Building full-stack projects</p>
+                    </div>
+                  </div>
+
+                  <div class="glass-mini flex items-center justify-between">
+                    <div>
+                      <p class="text-xs uppercase tracking-[0.32em] text-slate-400">Status</p>
+                      <p class="mt-2 text-base font-semibold text-white">Open to Java full-stack & Web Technology internships and opportunities</p>
+                    </div>
+                    <span class="rounded-full border border-emerald-400/30 bg-emerald-400/10 px-3 py-1 text-xs font-semibold text-emerald-300">Active</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section-pad scroll-mt-24">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="section-heading reveal">
+            <p class="section-kicker">About</p>
+            <h2 class="section-title">A motivated developer focused on quality, clarity, and growth</h2>
+          </div>
+
+          <div class="reveal glass-panel rounded-[2rem] border border-white/10 p-6 sm:p-8">
+            <div class="grid gap-6 lg:grid-cols-3">
+              <div class="lg:col-span-2">
+                <p class="text-lg leading-8 text-slate-300">
+                  I am a Computer Science and Engineering student with a strong interest in Java full-stack development, web technologies, and building elegant digital experiences. I enjoy solving problems methodically, learning modern tools quickly, and designing applications that balance usability with technical strength.
+                </p>
+                <p class="mt-4 text-lg leading-8 text-slate-400">
+                  My goal is to contribute to a forward-thinking engineering team where I can sharpen my skills in Core Java, Spring Boot, MySQL, and responsive UI development while delivering work that is thoughtful and reliable.
+                </p>
+              </div>
+
+              <div class="grid gap-4">
+                <div class="glass-mini">
+                  <p class="text-xs uppercase tracking-[0.32em] text-slate-400">Core Strengths</p>
+                  <p class="mt-2 text-base text-white">Core Java, Spring Boot, MySQL, GitHub, Web Development</p>
+                </div>
+                <div class="glass-mini">
+                  <p class="text-xs uppercase tracking-[0.32em] text-slate-400">Career Goal</p>
+                  <p class="mt-2 text-base text-white">Join a strong software team and build impactful products</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section-pad scroll-mt-24">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="section-heading reveal">
+            <p class="section-kicker">Skills</p>
+            <h2 class="section-title">Tools and technologies I work with</h2>
+          </div>
+          <div id="skills-grid" class="grid gap-5 sm:grid-cols-2 xl:grid-cols-4"></div>
+        </div>
+      </section>
+
+      <section id="projects" class="section-pad scroll-mt-24">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="section-heading reveal">
+            <p class="section-kicker">Projects</p>
+            <h2 class="section-title">Selected work with modern UI and practical impact</h2>
+          </div>
+          <div id="projects-grid" class="grid gap-6 lg:grid-cols-3"></div>
+        </div>
+      </section>
+
+      <section id="certificates" class="section-pad scroll-mt-24">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="section-heading reveal">
+            <p class="section-kicker">Certificates</p>
+            <h2 class="section-title">Internship certificates and achievements</h2>
+          </div>
+          <p class="reveal mb-6 max-w-3xl text-slate-400">
+          </p>
+          <div id="certificates-grid" class="grid gap-5 md:grid-cols-2 xl:grid-cols-3"></div>
+        </div>
+      </section>
+
+      <section id="education" class="section-pad scroll-mt-24">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="section-heading reveal">
+            <p class="section-kicker">Education</p>
+            <h2 class="section-title">Academic background</h2>
+          </div>
+          <div id="education-grid" class="grid gap-5 md:grid-cols-3"></div>
+        </div>
+      </section>
+
+      <section id="activities" class="section-pad scroll-mt-24">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="section-heading reveal">
+            <p class="section-kicker">Activities & Certifications</p>
+            <h2 class="section-title">Leadership, collaboration, and community</h2>
+          </div>
+          <div id="activities-grid" class="grid gap-5 md:grid-cols-3"></div>
+        </div>
+      </section>
+
+      <section id="contact" class="section-pad scroll-mt-24 pb-24">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="section-heading reveal">
+            <p class="section-kicker">Contact</p>
+            <h2 class="section-title">Let’s build something polished and useful</h2>
+          </div>
+
+          <div class="grid gap-6 lg:grid-cols-5">
+            <div class="reveal glass-panel rounded-[2rem] border border-white/10 p-6 lg:col-span-2">
+              <h3 class="font-display text-2xl font-bold text-white">Get in touch</h3>
+              <p class="mt-3 text-slate-400">I’m open to internships, collaborations, and opportunities where I can contribute and learn.</p>
+
+              <div class="mt-8 grid gap-4">
+                <a href="mailto:vspatil1627@gmail.com" class="contact-card">
+                  <span class="contact-label">Email</span>
+                  <span class="contact-value">vspatil1627@gmail.com</span>
+                </a>
+                <a href="https://www.linkedin.com/in/vishwajeet-patil-626362289/" target="_blank" rel="noreferrer" class="contact-card">
+                  <span class="contact-label">LinkedIn</span>
+                  <span class="contact-value">vishwajeet-patil</span>
+                </a>
+                <a href="https://leetcode.com/u/Vishwajeet_S_Patil/" target="_blank" rel="noreferrer" class="contact-card">
+                  <span class="contact-label">LeetCode</span>
+                  <span class="contact-value">Vishwajeet_S_Patil</span>
+                </a>
+                <a href="https://www.hackerrank.com/profile/vspatil1627" target="_blank" rel="noreferrer" class="contact-card">
+                  <span class="contact-label">HackerRank</span>
+                  <span class="contact-value">vspatil1627</span>
+                </a>
+                <a href="https://github.com/VishwajeetPatil27" target="_blank" rel="noreferrer" class="contact-card">
+                  <span class="contact-label">GitHub</span>
+                  <span class="contact-value">VishwajeetPatil27</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="reveal glass-panel rounded-[2rem] border border-white/10 p-6 lg:col-span-3">
+              <form id="contact-form" class="grid gap-5">
+                <div class="grid gap-5 md:grid-cols-2">
+                  <label class="field-label">
+                    <span>Name</span>
+                    <input type="text" name="name" placeholder="Your name" required class="field-input" />
+                  </label>
+                  <label class="field-label">
+                    <span>Email</span>
+                    <input type="email" name="email" placeholder="Your email" required class="field-input" />
+                  </label>
+                </div>
+                <label class="field-label">
+                  <span>Message</span>
+                  <textarea name="message" rows="6" placeholder="Tell me about your project or opportunity..." required class="field-input resize-none"></textarea>
+                </label>
+                <div class="flex flex-wrap items-center gap-4">
+                  <button type="submit" class="btn-primary">Send Message</button>
+                  <p class="text-sm text-slate-400">Or email directly at <a href="mailto:vspatil1627@gmail.com" class="text-cyan-300 hover:text-cyan-200">vspatil1627@gmail.com</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-white/10 bg-slate-950/50">
+      <div class="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-8 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+        <p class="text-sm text-slate-400">Copyright <span data-year></span> Vishwajeet Patil. All rights reserved.</p>
+        <div class="flex items-center gap-4">
+          <a href="https://www.linkedin.com/in/vishwajeet-patil-626362289/" target="_blank" rel="noreferrer" class="social-icon" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4.5 9.5V19"/><path d="M4.5 5.5v.5"/><path d="M9 19v-5.2c0-1.9 1.1-3.3 2.8-3.3 1.7 0 2.7 1.2 2.7 3.3V19"/><path d="M14.5 11.2c.6-1 1.7-1.7 3.1-1.7 2.3 0 4 1.5 4 4.5V19"/></svg>
+          </a>
+          <a href="https://github.com/VishwajeetPatil27" target="_blank" rel="noreferrer" class="social-icon" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3C7 3 3.5 6.8 3.5 11.6c0 3.8 2.4 7 5.8 8.1.4.1.6-.1.6-.4v-1.6c-2.4.5-2.9-1-2.9-1-.4-1-.9-1.2-.9-1.2-.8-.6.1-.6.1-.6.9.1 1.4 1 1.4 1 .8 1.4 2.1 1 2.6.8.1-.6.3-1 .6-1.2-2-.2-4.1-1-4.1-4.5 0-1 .3-1.8.9-2.5-.1-.2-.4-1.2.1-2.4 0 0 .8-.3 2.5 1a8.6 8.6 0 0 1 4.5 0c1.7-1.3 2.5-1 2.5-1 .5 1.2.2 2.2.1 2.4.6.7.9 1.5.9 2.5 0 3.5-2.1 4.3-4.1 4.5.3.3.6.8.6 1.6v2.4c0 .3.2.5.6.4 3.4-1.1 5.8-4.3 5.8-8.1C20.5 6.8 17 3 12 3z"/></svg>
+          </a>
+          <a href="https://leetcode.com/u/Vishwajeet_S_Patil/" target="_blank" rel="noreferrer" class="social-icon" aria-label="LeetCode">
+            <span class="text-[0.7rem] font-bold tracking-tight">LC</span>
+          </a>
+          <a href="https://www.hackerrank.com/profile/vspatil1627" target="_blank" rel="noreferrer" class="social-icon" aria-label="HackerRank">
+            <span class="text-[0.7rem] font-bold tracking-tight">HR</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div id="page-loader" class="page-loader">
+    <div class="loader-orb"></div>
+    <p class="mt-4 text-sm uppercase tracking-[0.45em] text-slate-300">Loading portfolio</p>
+  </div>
+
+  <template id="skill-template">
+    <article class="reveal skill-card glass-panel rounded-[1.75rem] border border-white/10 p-5">
+      <div class="flex items-center gap-4">
+        <div class="skill-icon"></div>
+        <div>
+          <h3 class="text-lg font-semibold text-white"></h3>
+          <p class="text-sm text-slate-400"></p>
+        </div>
+      </div>
+    </article>
+  </template>
+
+      <template id="project-template">
+        <article class="reveal project-card glass-panel rounded-[2rem] border border-white/10 p-4">
+          <div class="project-image-wrap">
+            <img class="project-image" alt="" loading="lazy" />
+            <div class="project-fallback hidden">
+          <span></span>
+        </div>
+      </div>
+          <div class="p-3 pt-5">
+            <h3 class="text-2xl font-bold text-white"></h3>
+            <p class="mt-3 text-sm leading-7 text-slate-400"></p>
+            <p class="project-impact mt-4 text-sm font-medium text-cyan-200/90"></p>
+            <div class="project-tags mt-4 flex flex-wrap gap-2"></div>
+            <div class="mt-6 flex flex-wrap items-center gap-3">
+              <a class="btn-primary btn-sm project-link" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="btn-secondary btn-sm project-live-link" target="_blank" rel="noreferrer">Live Demo</a>
+            </div>
+          </div>
+        </article>
+      </template>
+
+  <template id="timeline-template">
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="glass-panel rounded-[1.75rem] border border-white/10 p-5">
+        <p class="timeline-role"></p>
+        <p class="timeline-org"></p>
+        <p class="timeline-date"></p>
+        <p class="timeline-desc"></p>
+      </div>
+    </div>
+  </template>
+
+  <template id="education-template">
+    <article class="reveal glass-panel rounded-[1.75rem] border border-white/10 p-6">
+      <p class="edu-title"></p>
+      <p class="edu-sub"></p>
+      <div class="mt-6 inline-flex rounded-full border border-cyan-400/20 bg-cyan-400/10 px-4 py-2 text-sm font-medium text-cyan-100"></div>
+    </article>
+  </template>
+
+  <template id="activity-template">
+    <article class="reveal glass-panel rounded-[1.75rem] border border-white/10 p-6">
+      <div class="activity-badge"></div>
+      <h3 class="mt-4 text-2xl font-bold text-white"></h3>
+      <p class="mt-3 text-slate-400"></p>
+    </article>
+  </template>
+
+  <template id="certificate-template">
+    <article class="reveal certificate-card glass-panel rounded-[2rem] border border-white/10 p-4">
+      <div class="certificate-image-wrap">
+        <img class="certificate-image" alt="" loading="lazy" />
+        <div class="certificate-fallback hidden">
+          <span></span>
+        </div>
+      </div>
+      <div class="px-2 pb-2 pt-4">
+        <h3 class="text-xl font-bold text-white"></h3>
+        <p class="mt-2 text-sm leading-7 text-slate-400"></p>
+      </div>
+    </article>
+  </template>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
